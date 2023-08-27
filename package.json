@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r esm ./index.js",
+    "start:dev": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/MagdalenaTyminska/goit-node-hw1/issues"
   },
-  "homepage": "https://github.com/MagdalenaTyminska/goit-node-hw1#readme"
+  "homepage": "https://github.com/MagdalenaTyminska/goit-node-hw1#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "fs": "^0.0.1-security",
+    "nanoid": "^4.0.2",
+    "path": "^0.12.7",
+    "uniqid": "^5.4.0"
+  }
 }
